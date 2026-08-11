@@ -141,66 +141,180 @@ main{
 
 }
 
-/* ================================
-   DEFINIÇÃO DE CASO - SRAG
-================================ */
+/* ==========================================
+   DEFINIÇÃO DE CASO DE SRAG
+========================================== */
 
-.titulo-definicao {
-    font-size: 1.45rem;
+.definicao-srag {
+    background: linear-gradient(135deg, #e9f9fc, #f4fbfc);
+    border-radius: 18px;
+    padding: 28px 32px;
+    margin-bottom: 35px;
+    border: 1px solid rgba(0, 120, 150, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+
+/* CABEÇALHO */
+
+.cabecalho-definicao {
+    display: flex;
+    align-items: center;
+    gap: 14px;
     margin-bottom: 18px;
-    font-weight: 500;
 }
 
-.texto-definicao {
-    font-size: 1.08rem;
-    line-height: 1.7;
-    margin-bottom: 22px;
+.icone-definicao {
+    font-size: 2rem;
 }
+
+.rotulo-definicao {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #47757f;
+    margin-bottom: 3px;
+}
+
+.cabecalho-definicao h2 {
+    margin: 0;
+    font-size: 1.45rem;
+    font-weight: 600;
+}
+
+
+/* RESUMO */
+
+.resumo-definicao {
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 20px 24px;
+    margin-top: 20px;
+    font-size: 1.15rem;
+    line-height: 1.5;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+
+    .resumo-definicao {
+        white-space: normal;
+        font-size: 1.05rem;
+        line-height: 1.5;
+    }
+
+}
+
+/* CRITÉRIOS */
 
 .criterios-srag {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 18px;
-    margin: 20px 0;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: stretch;
+    gap: 14px;
 }
 
-.criterio {
-    background: rgba(255, 255, 255, 0.65);
-    border-radius: 14px;
-    padding: 18px 20px;
-    border: 1px solid rgba(0, 0, 0, 0.06);
+
+/* CARTÕES */
+
+.criterio-srag {
+    background: rgba(255, 255, 255, 0.75);
+    border-radius: 15px;
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
 }
 
-.criterio-titulo {
+.criterio-srag.sintomas {
+    border-top: 4px solid #8bcf9b;
+}
+
+.criterio-srag.gravidade {
+    border-top: 4px solid #e6a35c;
+}
+
+
+/* TÍTULO DOS CRITÉRIOS */
+
+.titulo-criterio {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.titulo-criterio > span {
+    font-size: 1.6rem;
+}
+
+.titulo-criterio small {
     display: block;
-    font-size: 1.05rem;
-    font-weight: 600;
-    margin-bottom: 14px;
+    font-size: 0.68rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    color: #6d7d82;
+    margin-bottom: 3px;
 }
 
-.itens-criterio {
+.titulo-criterio strong {
+    font-size: 1rem;
+}
+
+
+/* ITENS */
+
+.lista-criterios {
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
 
-.itens-criterio span {
+.lista-criterios span {
     background: white;
-    border-radius: 20px;
-    padding: 7px 12px;
-    font-size: 0.92rem;
+    padding: 8px 12px;
+    border-radius: 18px;
+    font-size: 0.88rem;
+    line-height: 1.3;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.04);
 }
 
-.observacao-srag {
-    font-size: 0.9rem;
-    margin-top: 8px;
+
+/* SINAL DE + */
+
+.mais-srag {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #7b969c;
 }
+
+
+/* ATENÇÃO */
 
 .atencao-srag {
-    margin-top: 18px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 20px;
     padding: 14px 16px;
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.55);
+    background: rgba(255, 245, 225, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(220, 170, 90, 0.15);
+}
+
+.icone-atencao {
+    font-size: 1.25rem;
+}
+
+.atencao-srag strong {
     font-size: 0.92rem;
-    line-height: 1.5;
+}
+
+.atencao-srag p {
+    margin: 3px 0 0;
+    font-size: 0.84rem;
+    line-height: 1.45;
 }
